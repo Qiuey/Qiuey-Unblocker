@@ -1,0 +1,394 @@
+body {
+  font-family: "Shadows Into Light";
+  font-size: "25px";
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+}
+
+#frame {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: rgb(255, 255, 255);
+  user-select: none;
+}
+
+.container {
+  margin-top: 10%;
+  font-family: "Shadows Into LIght";
+  font-size: "50px";
+  color: rgb(255, 255, 255);
+}
+
+.container p {
+  font-size: 50px;
+  margin-bottom: 2px;
+}
+
+#iurl {
+  background-color: inherit;
+  width: 100%;
+  height: 28px;
+  border: solid 1px #fff;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  padding: 8px 0px;
+  margin-bottom: 5px;
+  box-sizing: content-box;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.btn {
+  background-color: inherit;
+  width: 100%;
+  height: 28px;
+  border: solid 1px #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #ffffff;
+  padding: 8px 0px;
+  box-sizing: content-box;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background: #444e5c;
+  color: #fff;
+}
+
+.container a {
+  height: 20px;
+  background: inherit;
+  color: rgb(255, 255, 255);
+  border: 0;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 17px;
+  transition: 0.3s;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+#header {
+  height: 100px;
+  float: left;
+}
+
+.help_header {
+  float: right;
+}
+
+.container a:hover {
+  font-size: 23;
+}
+
+.url {
+  width: 300px;
+  margin: auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.background-container {
+  z-index: -1; /* New z-index value */
+}
+<div class="animated-background"></div>
+<div class="content-container">
+   @keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {    
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+    @-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to { 
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container{
+  position: fixed;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+}
+
+.stars {
+ background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+ position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+    z-index: 0;
+}
+
+.twinkling{
+  width:10000px;
+  height: 100%;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+  background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    
+    -moz-animation:move-background 70s linear infinite;
+  -ms-animation:move-background 70s linear infinite;
+  -o-animation:move-background 70s linear infinite;
+  -webkit-animation:move-background 70s linear infinite;
+  animation:move-background 70s linear infinite;
+  
+}
+
+.clouds{
+  width:10000px;
+  height: 100%;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+  background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+   -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+img{
+  height: 70vh;
+  width:70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+}
+</div>
+
+.button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button {
+    padding: 15px 25px;
+    background-color: #00000000;
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    //cursor: none;
+    background: rgb(27, 27, 27);
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-family: 'arial';
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.4em;
+  
+  a {
+    color: teal;
+  }
+}
+
+.btn {
+  border-radius: 10px; /* Applies a circular shape */
+  width: 100px; /* Adjust the width and height to your desired size */
+  height: 40px;
+}
+
+.header {
+  border-radius: 80%; /* Applies a circular shape */
+  width: 200px; /* Adjust the width and height to your desired size */
+  height: 200px;
+  background-color: #000000; /* Add your preferred background color */
+  text-align: center; /* Centers the text horizontally */
+  line-height: 200px; /* Vertically centers the text */
+  color: #333333; /* Add your preferred text color */
+}
+
+body {
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 50px; /* Make it round */
+  border: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
